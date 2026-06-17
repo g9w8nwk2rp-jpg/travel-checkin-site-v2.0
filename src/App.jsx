@@ -17,6 +17,7 @@ import {
   Sparkles,
   Star,
 } from 'lucide-react';
+import ChinaCheckinMap from './components/ChinaCheckinMap';
 import { cities, featuredPhotos, stats, stories } from './data/travelData';
 
 const iconMap = {
@@ -358,6 +359,7 @@ export default function App() {
     <>
       <Hero />
       <main>
+        <ChinaCheckinMap />
         <MapSection selectedCity={selectedCity} onSelectCity={setSelectedCity} />
         <GallerySection selectedCity={selectedCity} onSelectCity={setSelectedCity} />
         <StoriesSection />

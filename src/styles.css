@@ -299,6 +299,197 @@ img { display: block; max-width: 100%; }
     linear-gradient(180deg, #fffdf7, #f5fbf7);
 }
 
+.china-checkin-section {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(255, 207, 117, 0.26), transparent 25rem),
+    radial-gradient(circle at 88% 16%, rgba(142, 215, 255, 0.18), transparent 26rem),
+    linear-gradient(180deg, #fffdf7 0%, #fff8e9 100%);
+}
+
+.china-checkin-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(330px, 0.34fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.china-map-card,
+.china-progress-panel {
+  border: 1px solid rgba(74, 116, 134, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 253, 247, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.china-map-card {
+  overflow: hidden;
+  padding: 18px;
+}
+
+.china-map-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.china-map-toolbar span,
+.progress-copy p,
+.checkin-hint {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.china-map-toolbar strong {
+  display: block;
+  margin-top: 4px;
+  color: #27495a;
+  font-size: 1.35rem;
+}
+
+.china-map-toolbar button {
+  display: inline-grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid rgba(255, 155, 99, 0.28);
+  border-radius: 50%;
+  background: #fff2df;
+  color: #b85a25;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.china-map-toolbar button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(255, 139, 88, 0.16);
+}
+
+.china-map-svg {
+  display: block;
+  width: 100%;
+  min-height: 520px;
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(58, 159, 216, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 159, 216, 0.07) 1px, transparent 1px),
+    linear-gradient(180deg, #eaf8ff 0%, #fff8e9 100%);
+  background-size: 46px 46px, 46px 46px, auto;
+}
+
+.province-shape {
+  fill: #e7edf0;
+  stroke: rgba(255, 253, 247, 0.96);
+  stroke-width: 5;
+  cursor: pointer;
+  outline: none;
+  transition: fill 180ms ease, filter 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+
+.province-shape:hover,
+.province-shape:focus-visible {
+  filter: url("#provinceLift");
+  opacity: 0.96;
+  transform: translateY(-3px);
+}
+
+.province-shape:focus-visible {
+  stroke: #3a9fd8;
+  stroke-width: 7;
+}
+
+.province-shape.checked {
+  fill: #ff9b63;
+  stroke: #fff8e9;
+}
+
+.china-progress-panel {
+  display: grid;
+  align-content: center;
+  gap: 24px;
+  padding: 28px;
+}
+
+.progress-orbit {
+  display: grid;
+  width: min(100%, 230px);
+  aspect-ratio: 1;
+  place-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #fffdf7 0 58%, transparent 59%),
+    conic-gradient(#ff9b63 var(--progress), #e7edf0 0);
+  box-shadow: inset 0 0 0 1px rgba(74, 116, 134, 0.08), 0 18px 42px rgba(63, 126, 151, 0.12);
+}
+
+.progress-orbit span {
+  color: #27495a;
+  font-size: clamp(2.4rem, 4vw, 4.1rem);
+  font-weight: 950;
+}
+
+.progress-copy {
+  text-align: center;
+}
+
+.progress-copy h3 {
+  margin: 10px 0 0;
+  color: #27495a;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1;
+}
+
+.progress-copy p {
+  margin: 10px 0 0;
+}
+
+.progress-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.progress-metrics article {
+  min-height: 132px;
+  border: 1px solid rgba(74, 116, 134, 0.12);
+  border-radius: 8px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.progress-metrics svg {
+  color: var(--orange);
+}
+
+.progress-metrics strong {
+  display: block;
+  margin-top: 18px;
+  color: #27495a;
+  font-size: 2.1rem;
+  line-height: 1;
+}
+
+.progress-metrics span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.checkin-hint {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 999px;
+  padding: 12px 14px;
+  background: #e9f7ef;
+  color: #477353;
+}
+
 .map-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(380px, 0.75fr);
@@ -828,6 +1019,7 @@ img { display: block; max-width: 100%; }
   .nav-links a { padding: 9px 11px; }
 
   .map-layout,
+  .china-checkin-layout,
   .album-shell {
     grid-template-columns: 1fr;
   }
@@ -863,6 +1055,9 @@ img { display: block; max-width: 100%; }
   }
 
   .section-heading.split p { margin-top: 16px; }
+  .china-map-card { padding: 12px; }
+  .china-map-svg { min-height: 380px; }
+  .china-progress-panel { padding: 20px; }
   .illustration-map { min-height: 520px; }
   .city-pin span { display: none; }
   .city-pin { width: 46px; justify-content: center; padding: 0; }
