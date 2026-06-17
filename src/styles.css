@@ -319,49 +319,60 @@ img { display: block; max-width: 100%; }
   box-shadow: var(--shadow);
 }
 
-.map-shape {
+.china-illustration {
   position: absolute;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  background: rgba(200, 237, 207, 0.72);
-  box-shadow: inset 0 0 0 1px rgba(90, 163, 106, 0.14), 0 20px 50px rgba(90, 163, 106, 0.14);
+  inset: 5% 4% 4%;
+  width: 92%;
+  height: 91%;
+  overflow: visible;
 }
 
-.shape-west {
-  left: 13%;
-  top: 25%;
-  width: 40%;
-  height: 43%;
-  border-radius: 48% 42% 38% 50%;
-  transform: rotate(-10deg);
+.china-map-shadow {
+  fill: rgba(63, 126, 151, 0.12);
+  transform: translate(12px, 16px);
 }
 
-.shape-east {
-  right: 16%;
-  top: 18%;
-  width: 38%;
-  height: 52%;
-  border-radius: 42% 54% 46% 40%;
-  transform: rotate(9deg);
+.china-map-main,
+.china-map-west,
+.china-map-south,
+.china-map-coast,
+.china-map-island {
+  stroke: rgba(255, 253, 247, 0.95);
+  stroke-linejoin: round;
+  stroke-width: 8;
 }
 
-.shape-south {
-  right: 24%;
-  bottom: 12%;
-  width: 26%;
-  height: 23%;
-  border-radius: 52% 36% 48% 42%;
-  background: rgba(245, 223, 184, 0.78);
+.china-map-main {
+  fill: #c8edcf;
+  filter: drop-shadow(0 20px 42px rgba(63, 126, 151, 0.13));
 }
 
-.route-thread {
-  position: absolute;
-  left: 40%;
-  top: 43%;
-  width: 34%;
-  height: 25%;
-  border-top: 3px dashed rgba(255, 155, 99, 0.65);
-  border-right: 3px dashed rgba(255, 155, 99, 0.45);
-  transform: rotate(11deg);
+.china-map-west {
+  fill: #eaf8ff;
+  opacity: 0.78;
+}
+
+.china-map-south {
+  fill: #fff8e9;
+  opacity: 0.86;
+}
+
+.china-map-coast {
+  fill: #8ed7ff;
+  opacity: 0.38;
+}
+
+.china-map-island {
+  fill: #ffcf75;
+  opacity: 0.62;
+}
+
+.map-route {
+  fill: none;
+  stroke: rgba(255, 139, 88, 0.72);
+  stroke-dasharray: 12 14;
+  stroke-linecap: round;
+  stroke-width: 5;
 }
 
 .city-pin {
@@ -380,10 +391,17 @@ img { display: block; max-width: 100%; }
   font-weight: 900;
   box-shadow: 0 13px 26px rgba(52, 109, 130, 0.16);
   transform: translate(-50%, -50%);
-  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
 .city-pin svg { color: var(--pin-color); fill: color-mix(in srgb, var(--pin-color), transparent 70%); }
+
+.city-pin:hover,
+.city-pin:focus-visible {
+  border-color: color-mix(in srgb, var(--pin-color), white 42%);
+  box-shadow: 0 0 0 9px color-mix(in srgb, var(--pin-color), transparent 86%), 0 18px 32px rgba(52, 109, 130, 0.2);
+  transform: translate(-50%, -50%) scale(1.1);
+}
 
 .city-pin::after {
   position: absolute;
@@ -398,6 +416,12 @@ img { display: block; max-width: 100%; }
   background: color-mix(in srgb, var(--pin-color), white 78%);
   box-shadow: 0 0 0 11px color-mix(in srgb, var(--pin-color), transparent 82%), 0 16px 30px rgba(52, 109, 130, 0.2);
   transform: translate(-50%, -50%) scale(1.08);
+}
+
+.city-pin.active:hover,
+.city-pin.active:focus-visible {
+  box-shadow: 0 0 0 13px color-mix(in srgb, var(--pin-color), transparent 78%), 0 20px 36px rgba(52, 109, 130, 0.24);
+  transform: translate(-50%, -50%) scale(1.14);
 }
 
 .city-pin.active::after { opacity: 0.28; }

@@ -114,10 +114,44 @@ function MapSection({ selectedCity, onSelectCity }) {
         </div>
         <div className="map-layout">
           <div className="illustration-map" aria-label="旅行打卡地图">
-            <div className="map-shape shape-west" />
-            <div className="map-shape shape-east" />
-            <div className="map-shape shape-south" />
-            <div className="route-thread" />
+            <svg className="china-illustration" viewBox="0 0 900 650" aria-hidden="true">
+              <path
+                className="china-map-shadow"
+                d="M138 256c24-69 109-114 192-109 54 3 83-36 136-40 57-4 101 30 141 59 38 28 90 29 123 67 34 39 24 88 4 130-19 41-62 51-99 81-39 31-51 90-107 105-50 13-90-22-136-19-58 4-109 48-164 24-54-24-73-84-89-138-15-51-18-111-1-160z"
+              />
+              <path
+                className="china-map-main"
+                d="M128 244c25-74 116-121 204-116 57 3 88-39 145-43 61-4 108 32 150 63 41 30 96 31 131 71 36 42 26 94 5 139-21 44-67 55-106 87-42 33-55 96-115 112-53 14-96-23-145-20-62 4-116 51-175 25-58-25-78-90-95-148-16-54-19-118 1-170z"
+              />
+              <path
+                className="china-map-west"
+                d="M128 244c25-74 116-121 204-116 18 1 33-2 48-8 8 54-18 104-61 135-47 34-50 91-90 121-29 22-70 20-101 7-15-49-17-96 0-139z"
+              />
+              <path
+                className="china-map-south"
+                d="M339 439c48-18 89-4 137 12 52 18 90-1 132-38 29-25 73-34 93-67 14 39 3 75-44 99-42 33-55 96-115 112-53 14-96-23-145-20-62 4-116 51-175 25-21-9-37-24-50-42 56 16 113-57 167-81z"
+              />
+              <path
+                className="china-map-coast"
+                d="M624 161c41 30 96 31 131 71 36 42 26 94 5 139-17 36-51 50-85 72 8-38 52-66 49-113-3-51-57-67-94-93-33-23-54-62-101-72 34-16 65-26 95-4z"
+              />
+              <path
+                className="china-map-island island-hainan"
+                d="M565 579c18-8 42-5 55 8-9 18-43 22-64 10-7-4-4-13 9-18z"
+              />
+              <path
+                className="china-map-island island-taiwan"
+                d="M730 470c25 35 29 83 10 122-31-25-34-89-10-122z"
+              />
+              <path
+                className="map-route route-main"
+                d="M395 363 C510 286 600 278 645 322 S707 414 620 448"
+              />
+              <path
+                className="map-route route-south"
+                d="M620 448 C690 488 689 548 658 583"
+              />
+            </svg>
             {cities.map((city) => {
               const CityIcon = iconMap[city.icon] ?? MapPin;
               const isActive = city.id === selectedCity.id;

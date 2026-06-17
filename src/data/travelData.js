@@ -15,7 +15,7 @@ export const cities = [
     tags: ['园林', '水巷', '春日'],
     icon: 'Camera',
     color: '#ff8f6b',
-    coordinate: { left: '71%', top: '48%' },
+    coordinate: { left: '71%', top: '50%' },
     cover:
       'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?auto=format&fit=crop&w=1400&q=88',
     photos: [
@@ -51,7 +51,7 @@ export const cities = [
     tags: ['夜景', '历史', '梧桐'],
     icon: 'Flag',
     color: '#8ac6ff',
-    coordinate: { left: '66%', top: '45%' },
+    coordinate: { left: '68%', top: '47%' },
     cover:
       'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1400&q=88',
     photos: [
@@ -67,7 +67,7 @@ export const cities = [
         note: '人声和屋檐一起往前走，越晚越热闹。',
         date: '2025.09.03',
         image:
-          'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=88',
+          'https://commons.wikimedia.org/wiki/Special:FilePath/%E5%8D%97%E4%BA%AC%E5%9F%8E%E5%A2%99%E4%BF%AF%E7%9E%B0%E8%80%81%E9%97%A8%E4%B8%9C06.jpg?width=1200',
       },
       {
         title: '玄武湖清晨',
@@ -87,7 +87,7 @@ export const cities = [
     tags: ['海边', '日落', '小岛'],
     icon: 'Heart',
     color: '#ffbd59',
-    coordinate: { left: '59%', top: '73%' },
+    coordinate: { left: '70%', top: '69%' },
     cover:
       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=88',
     photos: [
@@ -123,7 +123,7 @@ export const cities = [
     tags: ['美食', '街巷', '慢生活'],
     icon: 'Star',
     color: '#96d38c',
-    coordinate: { left: '43%', top: '56%' },
+    coordinate: { left: '44%', top: '56%' },
     cover:
       'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1400&q=88',
     photos: [
