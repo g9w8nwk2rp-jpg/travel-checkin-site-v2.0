@@ -17,28 +17,28 @@ export const cities = [
     color: '#ff8f6b',
     coordinate: { left: '71%', top: '48%' },
     cover:
-      'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1400&q=85',
+      'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?auto=format&fit=crop&w=1400&q=88',
     photos: [
       {
         title: '拙政园午后',
         note: '树影落在白墙上，像一张慢慢展开的明信片。',
         date: '2025.04.18',
         image:
-          'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=88',
       },
       {
         title: '平江路夜色',
         note: '灯笼、石板路和河面，组成很轻的夜晚。',
         date: '2025.04.18',
         image:
-          'https://images.unsplash.com/photo-1516571748831-5d81767b788d?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=88',
       },
       {
         title: '街角茶铺',
         note: '坐下来喝茶，才发现旅行也可以很安静。',
         date: '2025.04.19',
         image:
-          'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1200&q=88',
       },
     ],
   },
@@ -53,28 +53,28 @@ export const cities = [
     color: '#8ac6ff',
     coordinate: { left: '66%', top: '45%' },
     cover:
-      'https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=1400&q=85',
+      'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1400&q=88',
     photos: [
       {
         title: '秦淮河边',
         note: '水面把灯光揉碎，风里有一点桂花味。',
         date: '2025.09.02',
         image:
-          'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=88',
       },
       {
         title: '老门东',
         note: '人声和屋檐一起往前走，越晚越热闹。',
         date: '2025.09.03',
         image:
-          'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=88',
       },
       {
         title: '玄武湖清晨',
         note: '早起的湖边很轻，适合把心情重新整理一遍。',
         date: '2025.09.04',
         image:
-          'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1200&q=88',
       },
     ],
   },
@@ -89,28 +89,28 @@ export const cities = [
     color: '#ffbd59',
     coordinate: { left: '59%', top: '73%' },
     cover:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=85',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=88',
     photos: [
       {
         title: '环岛路日落',
         note: '橙色落在海面上，像一封没有写完的信。',
         date: '2024.10.21',
         image:
-          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=88',
       },
       {
         title: '鼓浪屿小巷',
         note: '每一个转角都有花和旧墙。',
         date: '2024.10.22',
         image:
-          'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=88',
       },
       {
         title: '海边早餐',
         note: '旅行里的早餐，也值得认真收藏。',
         date: '2024.10.23',
         image:
-          'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=88',
       },
     ],
   },
@@ -125,28 +125,28 @@ export const cities = [
     color: '#96d38c',
     coordinate: { left: '43%', top: '56%' },
     cover:
-      'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=85',
+      'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1400&q=88',
     photos: [
       {
         title: '宽窄巷子',
         note: '阳光落在老木门上，空气里有茶香。',
         date: '2024.05.03',
         image:
-          'https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=88',
       },
       {
         title: '街角小馆',
         note: '热气腾腾的一餐，是旅途里最可靠的快乐。',
         date: '2024.05.04',
         image:
-          'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1200&q=88',
       },
       {
         title: '傍晚散步',
         note: '不赶路的时候，城市会主动讲故事。',
         date: '2024.05.05',
         image:
-          'https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?auto=format&fit=crop&w=1200&q=85',
+          'https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1200&q=88',
       },
     ],
   },
@@ -196,13 +196,13 @@ export const featuredPhotos = [
     city: '苏州',
     date: '2025.04.18',
     image:
-      'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=88',
   },
   {
     title: '夜色像电影',
     city: '南京',
     date: '2025.09.03',
     image:
-      'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=88',
   },
 ];
